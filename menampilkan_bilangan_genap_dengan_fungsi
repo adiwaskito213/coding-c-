@@ -1,0 +1,37 @@
+#include <stdio.h>
+int n=0;
+
+void judul(void)
+{
+ printf("========================================\n");
+ printf("PROGRAM MENAMPILKAN BILANGAN GENAP \n");
+ printf("=======================================\n");
+}
+int genap(int bilangan)
+{
+  if(bilangan % 2==0)
+  return 1;
+  else
+  return 0;
+}
+
+void author (void)
+{
+  printf("Created by adiwaskito213\n");
+  printf("adiwskt213@gmail.com\n");
+}
+
+int main (void)
+{
+ judul ();
+ for( int n=1; n<=100; n++)
+ {
+   if(genap(n)==1)
+   printf("%5d",n);
+ }
+  printf("\n");
+  
+  author ();
+  
+  return 0;
+}
